@@ -18,14 +18,14 @@
 #Además, el desafío incluye al final una quinta consigna o pregunta adicional, en la cual se le pedirá hacer un programa que haga el proceso inverso: deberá tomar tres datos, que serán el valor en horas, el valor en minutos y el valor en segundos transcurridos desde un evento dado, y su programa deberá calcular la cantidad total de segundos a partir de esos datos. Por ejemplo, si los datos ingresados fuesen: horas = 4, minutos = 36 y segundos = 8 entonces el resultado a obtener es que la cantidad total de segundos es 16568.
 
 print('\t\t\t Desafío 01: Conversión de Unidades de Tiempo')
-seg = int(input('Ingrese la cantidad de segundos del evento: '))
+for i in range(0,4):
+    seg = int(input('Ingrese la cantidad de segundos del evento: '))
 
-hs, sr = divmod(seg, 3600)
-mi, sr = divmod(sr, 60)
+    hs, sr = divmod(seg, 3600)
+    mi, sr = divmod(sr, 60)
 
-out = str(hs)+':'+str(mi)+':'+str(sr)
-print('\n\n \tSu conversión en formato de horas es: ', out, 'Hs\n\n')
-
+    out = str(hs)+':'+str(mi)+':'+str(sr)
+    print('\n\n \tSu conversión en formato de horas es: ', out, 'Hs\n\n')
 #Segunda Parte: Conversión Inversa
 hs = int(input('Ingrese la cantidad de horas: '))
 mi = int(input('Ingrese la cantidad de minutos: '))
