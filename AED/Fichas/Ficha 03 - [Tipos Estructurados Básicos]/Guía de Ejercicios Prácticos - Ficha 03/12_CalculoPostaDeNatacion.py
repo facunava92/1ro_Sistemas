@@ -11,14 +11,14 @@
 #   1 segundo son 100 centesimas.
 
 #Entrada
-#espalda = input('Tiempo en espalda en el formato mm:ss:cc: ')
-#pecho = input('Tiempo en pecho en el formato mm:ss:cc: ')
-#mariposa = input('Tiempo en mariposa en el formato mm:ss:cc: ')
-#libre = input('Tiempo en libre en el formato mm:ss:cc: ')
-espalda = '00:52:15'
-pecho = '01:02:75'
-mariposa = '00:59:80'
-libre = '00:48:15'
+espalda = input('Tiempo en espalda en el formato mm:ss:cc = ')
+pecho = input('Tiempo en pecho en el formato mm:ss:cc = ')
+mariposa = input('Tiempo en mariposa en el formato mm:ss:cc = ')
+libre = input('Tiempo en libre en el formato mm:ss:cc = ')
+#espalda = '00:52:15'
+#pecho = '01:02:75'
+#mariposa = '00:59:80'
+#libre = '00:48:15'
 
 #Proceso
 espalda_cent = int(espalda[0]+espalda[1])*60*100 + int(espalda[3]+espalda[4])*100 + int(espalda[6]+espalda[7])
